@@ -1,0 +1,7 @@
+[[project]]
+name = "hadoop-wordcount-python"
+description = "Experimenting MapReduce on a multi-node Google Cloud Dataproc cluster."
+links = [
+  { name = "Blog", url = "#" },
+  { name = "GitHub", url="https://github.com/varmor/hadoop-wordcount-python" },
+]
