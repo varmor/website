@@ -1,0 +1,47 @@
+# The URL the site will be built for
+base_url = "https://varmor.dev/"
+title = "Varun More"
+description = "Data Engineer"
+generate_feeds = false
+
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+minify_html = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+taxonomies = [
+  {name = "adventure_tags", feed = true},
+  {name = "tags", feed = true},
+]
+
+[markdown]
+render_emoji = true
+smart_punctuation = true
+
+[markdown.highlighting]
+# Syntax highlighting config for Zola 0.22+
+# (1 theme mode: theme, or dual mode: light_theme + dark_theme)
+theme = "github-dark"
+
+[extra]
+date_format="%d %b, %Y"
+
+[[extra.main_menu]]
+name = "Projects"
+url = "@/projects/_index.md"
+
+[[extra.main_menu]]
+name = "Blogs"
+url = "@/blogs/_index.md"
+
+
+[[extra.main_menu]]
+name = "Adventure"
+url = "@/adventure/_index.md"
+
+[[extra.main_menu]]
+name = "Contact"
+url = "@/contact.md"
