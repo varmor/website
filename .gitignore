@@ -1,0 +1,5 @@
+public
+*.env
+.aider*
+.env
+.DS_Store
