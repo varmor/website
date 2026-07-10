@@ -1,7 +1,7 @@
 # The URL the site will be built for
-base_url = "https://varmor.dev/"
+base_url = "https://varunmore.com/"
 title = "Varun More"
-description = "Data Engineer"
+description = "AI Data Engineer"
 generate_feeds = false
 
 
@@ -13,13 +13,9 @@ minify_html = false
 build_search_index = false
 
 taxonomies = [
-  {name = "adventure_tags", feed = true},
+  {name = "moto_log_tags", feed = true},
   {name = "tags", feed = true},
 ]
-
-[markdown]
-render_emoji = true
-smart_punctuation = true
 
 [markdown.highlighting]
 # Syntax highlighting config for Zola 0.22+
@@ -39,8 +35,8 @@ url = "@/blogs/_index.md"
 
 
 [[extra.main_menu]]
-name = "Adventure"
-url = "@/adventure/_index.md"
+name = "Moto Log"
+url = "@/moto_log/_index.md"
 
 [[extra.main_menu]]
 name = "Contact"

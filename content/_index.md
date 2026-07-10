@@ -8,11 +8,11 @@ title = "Home"
 
 <div class="home-content">
 
-I’m Varun a Data Engineer with a B.Tech in Artificial Intelligence (Honors in Data Science). I work across data wrangling, ETL pipelines, machine learning, and backend systems.
+I’m Varun — though you might run into me as `@varmor_dev` in some corners of the internet. I work as an AI Data Engineer where I focus on building and scaling end-to-end data pipelines for mission-critical systems.
 
-My stack includes Python, SQL, Java, PySpark, Hadoop, Flask, Docker, and a bunch of tools that help make data a little less messy and a lot more useful.
+I like to [<u>tinker</u>](https://github.com/varmor) with data architecture, automation, and anything that makes massive datasets move reliably at scale.
 
-Outside work, I’m either riding my motorcycle or trekking up a mountain — there’s a separate section on this site for that kind of stuff, if you're curious.
+Outside work, I’m usually riding my motorcycles there’s a separate section on this site for that kind of stuff if you're curious.
 
 </div>
 
