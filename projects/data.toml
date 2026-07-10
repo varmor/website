@@ -1,0 +1,7 @@
+[[project]]
+name = "Project"
+description = "Will update the page soon."
+links = [
+  { name = "Blog", url = "#" },
+  { name = "GitHub", url="#" },
+]
