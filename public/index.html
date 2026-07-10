@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun More</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="title" content="Varun More">
+<meta property="og:site_name" content="Varun More">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Varun More">
+<meta property="og:description" content="AI Data Engineer">
+<meta property="og:url" content="https://varunmore.com/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Varun More">
+<meta name="twitter:description" content="AI Data Engineer">
+<meta name="twitter:url" content="https://varunmore.com/">
+
+<meta name="twitter:site" content="@varmor_dev">
+
+<meta name="twitter:creator" content="@varmor_dev">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://varunmore.com/styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js" integrity="sha512-4lykFR6C2W55I60sYddEGjieC2fU79R7GUtaqr3DzmNbo0vSaO1MfUjMoTFYYuedjfEix6uV9jVTtRCSBU/Xiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+<header>
+    <a href="https://varunmore.com/" class="title">
+        <h2 class="name">Varun More</h2>
+    </a>
+    <nav>
+        <div class="nav-items">
+            <a href="https://varunmore.com/">Home</a>
+            <a href="https://varunmore.com/projects/">Projects</a>
+            <a href="https://varunmore.com/blogs/">Blogs</a>
+            <a href="https://varunmore.com/moto_log/">Moto Log</a>
+            <a href="https://varunmore.com/contact/">Contact</a></div>
+        <button class="theme-toggle" title="Toggle Dark Mode">
+            <i data-feather="moon"></i>
+        </button>
+    </nav>
+</header>
+
+  <main>
+    <h1 id="wave-hello">👋🏽 Hello</h1>
+<div class="home-container">
+<div class="home-content">
+<p>I’m Varun — though you might run into me as <code>@varmor_dev</code> in some corners of the internet. I work as an AI Data Engineer where I focus on building and scaling end-to-end data pipelines for mission-critical systems.</p>
+<p>I like to <a rel="external" href="https://github.com/varmor"><u>tinker</u></a> with data architecture, automation, and anything that makes massive datasets move reliably at scale.</p>
+<p>Outside work, I’m usually riding my motorcycles there’s a separate section on this site for that kind of stuff if you're curious.</p>
+</div>
+<div class="home-image">
+    <img src="/images/website/profile.png" alt="Profile Image" class="img-rounded" />
+  </div>
+</div>
+
+  </main>
+<footer>
+    © 2025 Varun More<br>
+    <div class="social-links">
+        <a href="https://github.com/varmor" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i data-feather="github"></i></a>
+    </div>
+</footer>
+<script>
+    feather.replace();
+    const themeToggle = document.querySelector('.theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    // Set the initial theme based on user preference or localStorage
+    if (currentTheme) {
+        document.body.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            themeToggle.innerHTML = '<i data-feather="sun"></i>';
+            feather.replace();
+        }
+    }
+
+    themeToggle.addEventListener('click', function() {
+        let theme = 'light';
+        
+        // Add the transition class
+        document.body.classList.add('theme-transition');
+
+        if (document.body.getAttribute('data-theme') !== 'dark') {
+            theme = 'dark';
+            themeToggle.innerHTML = '<i data-feather="sun"></i>';
+        } else {
+            themeToggle.innerHTML = '<i data-feather="moon"></i>';
+        }
+        feather.replace();
+        document.body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+
+        // Remove the transition class after 0.5s
+        setTimeout(() => {
+            document.body.classList.remove('theme-transition');
+        }, 500);
+    });
+</script>
+</html>
